@@ -1,0 +1,137 @@
+## JAVA NOTES 3Aug
+---
+- runtime can change based on reqirement 
+- compiletime doesnt chnage 
+- if there is no calling in main then it isnt compile time polymorphysim i.e. method overloading
+- method name and parameter are checked first while calling a function
+> method of signature consists of :method name, number of argu, types of argu and order of argu.
+
+- can we overload java main() method? NO because there is only one main
+- compiler can compile the main 'any number of public static void main(string arg) with same name' but not with (string args[]);
+- @ time of compile we check compile time not overloading 
+- compile time polymor in java - static binding
+------
+
+
+## Constructor
+- need of constructor : it is special member of the class becaue it is the only fn wich can have same name as classNAme, it is the only fn which never has return type of before its name 
+- it inislize the obj at same time of creation 
+- every time an obj is created using new() keyword atleast one constructor is called
+- we can make const wit parameter as well 
+- it cinst dont take any parameter it called default const
+- default const is inbuild with compiler/ automatically inbuild 
+- students(){
+    roll= 110;
+    name = "Ajay;
+}.   it will make every student object as students
+- const cna tbe inherited 
+- a const cant be any of these : static, abstract, or final
+- void  students(){
+    roll= 110;
+    name = "Ajay;
+} it nows works like normal function, to call obj.objName()
+- 
+
+
+
+## 10Aug
+- can we execute any program without main()
+   ans- it depends upon the version of java
+   
+    * static block, variable, method
+
+ we can make n time of static block  : it can excute the program; 
+  we can write anywhere ststic block, it can execute anywhere;
+
+- static blolck only calls once, instance block it will be called for every objects that are made (for const also);
+  main method;
+
+- ----
+
+# this keyword
+
+- refered as current class instant variable
+- it helps in the calling of obj from one class to another
+- calling the one constructor from another const
+- used for calling another method from a normal method
+> 'this' MUST be first statement in constructor because it can generate compile time error
+-
+
+## 11 Aug
+
+# Object as an arugment & Object as return type 
+---
+- Object as an arugment - to communicate between two or more objects
+- Object as return type - we can return multiple value through an object
+
+
+## STRINGS & ARRAY
+# 13 Aug
+---- 
+ - printf cant print any thing without memory allocation, it always take base address and starts print untill it find first null.
+
+ - 
+----
+> in "c": 
+#include <stdio.h>
+
+int main() {
+     
+    // Write C code here
+    printf("GHANSHYAM"); >take memory in rom
+    char *p ="RAGHU"; >take memory in rom
+    char c[]= "JAIPUR";
+    char x[6]= {'J','A','I','P','U','R'}; >> it is wrong assignment, printf will give garbage value in last
+    printf("%s", p-9); >> OUTPUT GHANSHYAM_HANSHYAM
+    printf("%s", x);
+    return 0;
+> printf("%d" +1 ); will give 'd' as output because it treated as string [%,d,10] d= 1 idx;
+}
+----
+
+- in java string is an obj that represent a sequence of characters.
+- the "java.lang.String" class is used to create a string object (lang is a name of default package in java)
+- obj of string are immutable which mean a consatant and cant be chnaged once created 
+- string are type of obj that can store the chara of value and in java, every char is stored 16-bits i.e. UTF 16 bits encoding.
+- String acts the same as an array of chara in java
+
+- an array of char work smae as java string eg:
+ * char[] ch ={'E'N'G'I'N'N'E'R'}
+ * string s = new(String)
+
+- String s1 = "Welcome"
+  String s2 = "Welcome" >> it doesnt crate new instance (s2, s1 will point on welcome in heap)
+
+- each time we create a string litral, the jvm checks the string constant pool first.
+if the string already exists in the pool a reference to the pooled instance is returned.
+if the stirng doesnt exist in the pool, a new string instance is created and placed in the pool.
+
+- String s= "sachin";
+s.contact("tendulkar"); >> it will make new string in string constant pool area in heap
+system.out.println(s);
+>JIR: Java instant reference
+
+- in java this is how we write array in java
+int arr [] = {1,2,2,2,,222,}
+- array is a constant pointer, but pointer is variable
+
+## 14 Aug
+# Java string compare
+ * there are 3 method 
+ 1- equal() method : boolean is return type
+ 2- using == operator : boolean is return type
+ 3- by compareTo() method
+
+- string is a class not a variable, so we use equal() method
+- compare the references (== operator)
+- boolean takes only 1bits, so we use it in return type of T & F
+- the string concatention operator can concatenate not only string but primitive value also
+
+- in c :
+  char c[3][30] = {"ram", "ajay", "ghanshyam singh raghuwansi"} //if name is small the space will waste;
+  so we can use like this
+  char * p [3] = {"ram", "ajay", "bhdUILKFAEWC BFBQHX LW"}; // p is an array of 3, pointer to char, we describe like this
+
+
+
+  
