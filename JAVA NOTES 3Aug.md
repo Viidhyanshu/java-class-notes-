@@ -132,6 +132,33 @@ int arr [] = {1,2,2,2,,222,}
   so we can use like this
   char * p [3] = {"ram", "ajay", "bhdUILKFAEWC BFBQHX LW"}; // p is an array of 3, pointer to char, we describe like this
 
+## 17 Aug
+# Arrays 
+- 
+int a[2][3]={10,20,30,40,50,60};
+printf("%U", a[0]+1) - 1004
+
+- Array is treated as object in java because it stores in heap
+
+- in how many ways array can declear in java :
+   * int[] a;
+   * int []a;
+   * int a[];
+   * int[][] a;
+   * int [][]a;
+   * int a[][];
+   * int[] a,b; // 1d array a & b
+   * int []a,b[]; //1-D array a & 2D array b
+   * int[] a[], b[];
+   * int[], a, []b; //wrong way this, []b it is complie time error, we dont write array on second element
+
+-  we never write size of array in java: arr[5] X
+- we inilitisation like this :
+  * int a[] = new int[5];   //LHS in statck and RHS in heap
+  * int a [] = {1,2,2,3,4,5};
+  * int a[] = new int[5] {1,2,3,4,5};
+
+- 
 
 
   
