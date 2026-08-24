@@ -158,7 +158,47 @@ printf("%U", a[0]+1) - 1004
   * int a [] = {1,2,2,3,4,5};
   * int a[] = new int[5] {1,2,3,4,5};
 
+## 24 Aug
+# String buffer and string builder
+----
+- to make imutable string in java
+- string buffer is syncronised
+- string builder isnt syncronised
+- capacity : (old capacity * 2) + 2
+
+
+# Nested class in java
+----
+- can we have ststic class : yes;
+- syntax :
+      class outer class{
+        class inner class{
+          void display();
+          sout("hello from inner class);
+        }
+        psvm(){
+          outerclass outer = new outerclass();
+          innerclass inner = outer.new innerclass();
+          inner.display();
+        }
+      }
+
+- private data member can be accesed by inner class
+
+# Inheritance
+- it is the property in which one class inheritance the property of other class
+- syntax:
+      class Subclass-name extends Superclass-name{
+
+      }
+> extends keyword indicate that you are making a new class thats derives from existing class.
+      * subclass -- derive class
+      * superclass -- base class
+
+- there is no multiple class in java but in cpp it is.
+- Access specifier in inheritance:
+        a- public
+        b- deafult
+        c- private - accessible in same class only
+        d- protected- accessible to base class, outside the class of same package only and derive class in the same package and outside of package
 - 
-
-
-  
