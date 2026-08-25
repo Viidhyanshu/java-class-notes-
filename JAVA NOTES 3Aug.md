@@ -192,6 +192,7 @@ printf("%U", a[0]+1) - 1004
 
       }
 > extends keyword indicate that you are making a new class thats derives from existing class.
+      
       * subclass -- derive class
       * superclass -- base class
 
@@ -199,6 +200,16 @@ printf("%U", a[0]+1) - 1004
 - Access specifier in inheritance:
         a- public
         b- deafult
-        c- private - accessible in same class only
+        c- private - accessible in same class only, derive class and outside of the class isnt accessible
         d- protected- accessible to base class, outside the class of same package only and derive class in the same package and outside of package
-- 
+
+
+# 25 Aug
+# Inheritance
+----
+
+- Single, Multilevel, Hierarchical, Multiple, Hybrid : there are the type of Inheritance
+- Multiple isnt supported thorugh classes in java but works in cpp due to 'virtual method' in cpp
+- whenver we creat object of complete class, we select derive class because it contain all things
+
+>supuer() transfer the controll from derive class 
