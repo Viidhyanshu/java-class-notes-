@@ -213,3 +213,45 @@ printf("%U", a[0]+1) - 1004
 - whenver we creat object of complete class, we select derive class because it contain all things
 
 >supuer() transfer the controll from derive class 
+
+
+
+# 26 Aug
+----
+# supuer keyword
+- this keyword in java is reference variable which is used to refer immiedte parent class obj.
+- super.super = a -- will give CTErroe
+- obj which doesnt have reference in stack is called annoymous object/ unknown obj.
+
+
+# Abstract class
+----
+- class which has atleast one abstract method
+- abstract method - a method which has only decleration and not defination
+- abstraction is the process of hiding the implementation details and showing only function to the user
+- it use in case of inheritance
+- ways to achiveabstraction :
+  * Abstract class(0 to 100%)
+  * Interface(100)
+
+- Instantiation in Java is the process of creating an object (or an instance) from a class blueprint. This process
+  allocates memory on the heap for the new object and returns a reference that allows you to interact with it.
+
+- student s = new student(); 
+     here new student() is  initializtaion which is done by constructor
+     s is Instantiation
+     we cant Instantiation obj of reference class
+
+- student s = new student(); 
+    s.add();
+
+    compiler will throw CTErroe because here its defination isnt present 
+
+- it cant be inheritance
+- it can have const and static method also
+- it can have abstract and non abstract method
+- an abstract class MUST be declear with an abstract keywords
+- syntax :
+  abstract class{.  }
+
+
