@@ -10,11 +10,12 @@ abstract class RBI{
 }
 
 class SBI extends RBI{
-    private int cbal,cid;
+    private int cbal;
+    String cid;
     String cname, city;
     private static int bbal;
     static int count = 100;
-    private static float final roi = 7.2f;     //final because no-one can change(override) 7.2 ; //use of final variable,method. 
+    private static final float roi = 7.2f;     //final because no-one can change(override) 7.2 ; //use of final variable,method. 
 
     SBI(int cbal){
         this.cbal= cbal;
@@ -41,11 +42,12 @@ class SBI extends RBI{
     }
 }
 class Axis extends RBI {
-    private int cbal,cid;
+    private int cbal;
+    String cid;
     String cname, city;
     private static int bbal;
     static int count = 100;
-    private float final roi = 7.9f; 
+    private final float roi = 7.9f; 
 
     Axis(int cbal){
         this.cbal= cbal;
@@ -70,7 +72,7 @@ class Axis extends RBI {
 
     }
 }
-class abstract{
+class abstractd{
     public static void main(String[] arg){
         RBI r= new SBI(1000);
         r.deposite_account();
