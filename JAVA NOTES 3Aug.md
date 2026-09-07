@@ -230,7 +230,7 @@ printf("%U", a[0]+1) - 1004
 - abstract method - a method which has only decleration and not defination
 - abstraction is the process of hiding the implementation details and showing only function to the user
 - it use in case of inheritance
-- ways to achiveabstraction :
+- ways to achive abstraction :
   * Abstract class(0 to 100%)
   * Interface(100)
 
@@ -254,4 +254,14 @@ printf("%U", a[0]+1) - 1004
 - syntax :
   abstract class{.  }
 
+# 7 sept
+- Abstract class generally use Hierarchical inheritance.
 
+- Shape s= new circle(); //this is called upcasting.
+
+    s.draw(); //we have 3 void display function with draw
+    this is called Run time, Dynamic method dispatch, late binding
+
+- compiler cant see the address it only binds the method.(checking the type of refernce)
+- we cant define final() in abstract class
+> dynamic binding = method overriding + up casting
