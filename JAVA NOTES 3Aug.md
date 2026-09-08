@@ -265,3 +265,19 @@ printf("%U", a[0]+1) - 1004
 - compiler cant see the address it only binds the method.(checking the type of refernce)
 - we cant define final() in abstract class
 > dynamic binding = method overriding + up casting
+
+# 8 sept
+
+class upcast {
+
+    public static void main(String[] args) {
+
+        student_basic s = new Academic(100, "ajay", 1); // upcasting
+
+        s.showperformance();
+        s.showdata();
+        //System.out.println(s.name);
+        //s.show_aca(); will giv error because "cant find the symbol", 
+        //upcasting works only for overhidden methods. CTError
+    }
+}
