@@ -281,3 +281,14 @@ class upcast {
         //upcasting works only for overhidden methods. CTError
     }
 }
+
+# 14 sept
+- finalize method use for cleaning the space from heap, it belong to objcet class
+
+- Object{
+  finalize();
+  toString();
+  equals();
+  hashCode();
+  system.gc();
+}
